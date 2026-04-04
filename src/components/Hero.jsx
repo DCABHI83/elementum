@@ -1,12 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion"; // Import motion
+import { motion } from "framer-motion"; 
 import vector from "../assets/Vector 5.png";
 import semi from "../assets/semi.png";
 import curl1 from "../assets/curl1.png";
 import curl2 from "../assets/curl2.png";
 
 const Hero = () => {
-  // Simple animation settings
+
   const alert = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
@@ -17,7 +17,7 @@ const Hero = () => {
 
       <div className="flex flex-col justify-center relative items-center mt-[4em] gap-10 px-4">
         
-        {/* Changed text-6xl to responsive text-4xl md:text-6xl */}
+ 
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -69,7 +69,6 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        {/* Kept your absolute positioning exactly as is, just wrapped in motion */}
         <div className="pointer-events-none">
           <motion.img
             initial={{ x: -100, opacity: 0 }}

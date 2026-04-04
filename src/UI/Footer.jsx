@@ -25,10 +25,9 @@ const Footer = () => {
       className="bg-[#D7EEDD] px-6 md:px-10 pt-16 pb-10 text-gray-800 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Main Footer Content */}
+       
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-4">
           
-          {/* Dynamic Columns */}
           {footerData.map((section, index) => (
             <motion.div 
               key={index}
@@ -54,7 +53,7 @@ const Footer = () => {
             </motion.div>
           ))}
 
-          {/* Contact Column */}
+    
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -75,7 +74,6 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        {/* Copyright Section */}
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

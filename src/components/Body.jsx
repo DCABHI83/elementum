@@ -16,7 +16,7 @@ const Body = () => {
   return (
     <>
       <div className='main relative overflow-hidden px-6 md:px-0'>
-        {/* First Section */}
+   
         <div className='flex flex-col md:flex-row justify-evenly items-center gap-10 md:gap-0'>
           <motion.div 
             initial="hidden" whileInView="visible" variants={fadeInUp}
@@ -46,12 +46,12 @@ const Body = () => {
           </motion.div>
         </div>
 
-        {/* Cursive Background Decoration - Adjusted for mobile */}
+        
         <div className='absolute right-0 md:right-25 top-20 z-[-1] opacity-30 md:opacity-100 pointer-events-none'>
           <img className='w-[90vw] md:w-[70vw]' src={cursive} alt="cursive" />
         </div>
 
-        {/* Second Section */}
+       
         <div className='flex flex-col-reverse md:flex-row justify-evenly items-center mt-20 md:mt-10 gap-10 md:gap-0'>
           <motion.div 
             initial={{ scale: 0.9, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }}

@@ -11,7 +11,7 @@ import image8 from '../assets/image8.png'
 import vector from '../assets/Vector 5.png'
 
 const Faq = () => {
-  // Animation for the side images (subtle floating)
+
   const floatAnim = {
     animate: {
       y: [0, -10, 0],
@@ -30,7 +30,7 @@ const Faq = () => {
         <motion.img {...floatAnim} className='w-[18vw] md:w-[10vw] absolute bottom-0 left-5' src={image4} alt="image4" />
       </div>
 
-      {/* Center Testimonial Section */}
+     
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -55,7 +55,7 @@ const Faq = () => {
         </div>
       </motion.div>
 
-      {/* Right Image Cluster */}
+      
       <div className='image h-[30vh] md:h-[80vh] w-full md:w-[20%] relative'>
         <motion.img {...floatAnim} transition={{ delay: 0.2 }} className='w-[12vw] md:w-[6vw] absolute right-10 md:right-20 top-3' src={image5} alt="image5" />
         <motion.img {...floatAnim} transition={{ delay: 0.7 }} className='w-[8vw] md:w-[4vw] top-10 md:top-40 left-10 absolute' src={image6} alt="image6" />

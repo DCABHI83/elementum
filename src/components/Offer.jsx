@@ -18,8 +18,6 @@ const Offer = () => {
       title: "Piloting digital confidence",
     },
   ];
-
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -35,7 +33,7 @@ const Offer = () => {
 
   return (
     <>
-      {/* Top Header Section: Flex-col on mobile, Flex-row on desktop */}
+   
       <div className='main flex flex-col md:flex-row p-6 md:p-[2em] justify-evenly items-center gap-10 overflow-hidden'>
         <motion.div 
           initial={{ x: -50, opacity: 0 }}
@@ -55,7 +53,7 @@ const Offer = () => {
         </motion.div>
       </div>
 
-      {/* Items Section */}
+
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -70,22 +68,22 @@ const Offer = () => {
               variants={itemVariants}
               className="group border-t border-gray-300 last:border-b py-8 md:py-10"
             >
-              {/* Responsive Grid: Stacks on mobile (1 col), side-by-side on md+ */}
+       
               <div className="grid grid-cols-1 md:grid-cols-[1.5fr_4fr_1fr] items-center gap-6 md:gap-10">
                 
-                {/* Left: Label */}
+       
                 <p className="text-xs md:text-base text-gray-500 uppercase tracking-widest md:normal-case md:text-gray-800 leading-tight md:max-w-[200px]">
                   {elem.label}
                 </p>
 
-                {/* Center: Title */}
+
                 <div className="relative">
                   <h2 className="text-3xl md:text-5xl font-light tracking-tight text-black group-hover:text-gray-600 transition-colors">
                     {elem.title}
                   </h2>
                 </div>
 
-                {/* Right: Arrow (Hidden on mobile or aligned right) */}
+
                 <div className="text-right hidden md:block">
                   <span className="text-4xl font-extralight transition-transform group-hover:translate-x-3 inline-block cursor-pointer">
                     &rarr;

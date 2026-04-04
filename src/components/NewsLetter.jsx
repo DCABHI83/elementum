@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion"; // npm install framer-motion
+import { motion } from "framer-motion"; 
 import arrow1 from "../assets/arrow1.png";
 import arrow2 from "../assets/arrow2.png";
 import semi from "../assets/semi.png";
@@ -8,7 +8,7 @@ const NewsLetter = () => {
   return (
     <div className="main flex flex-col justify-center items-center bg-[#D7EEDD] relative h-auto py-20 gap-5 overflow-hidden">
       
-      {/* Arrow Animation - Position preserved */}
+
       <div className="arrow flex">
         <motion.img 
           initial={{ x: -20, opacity: 0 }}
@@ -22,13 +22,13 @@ const NewsLetter = () => {
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="w-[12vw] md:w-[8vw]" // Fixed the empty vw typo
+          className="w-[12vw] md:w-[8vw]" 
           src={arrow2} 
           alt="arrow2" 
         />
       </div>
 
-      {/* Text Responsive Scaling */}
+    
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -48,7 +48,7 @@ const NewsLetter = () => {
         </p>
       </motion.div>
 
-      {/* Button Animation */}
+
       <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -58,7 +58,7 @@ const NewsLetter = () => {
         </button>
       </motion.div>
 
-      {/* Decorative Semi-circle */}
+
       <div className="semi">
         <motion.img 
           initial={{ rotate: -10, opacity: 0 }}
@@ -69,7 +69,7 @@ const NewsLetter = () => {
         />
       </div>
 
-      {/* Divider */}
+
       <div className="w-[90vw] md:w-[80vw] h-px bg-[#AABDAE] mt-10">
       </div>
     </div>

@@ -23,13 +23,13 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Hamburger Icon: Hidden on Desktop */}
+        
         <div className='md:hidden cursor-pointer' onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} strokeWidth={1.75} />}
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+  
       <AnimatePresence>
         {isOpen && (
           <motion.div
