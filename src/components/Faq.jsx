@@ -8,7 +8,7 @@ import image5 from '../assets/image5.png'
 import image6 from '../assets/image6.png'
 import image7 from '../assets/image7.png'
 import image8 from '../assets/image8.png'
-import vector from '../assets/Vector 5.png'
+import vector from '../assets/vector.png'
 
 const Faq = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import cursive from "../assets/cursive.png"
-import vector from "../assets/vector 5.png"
+import vector from "../assets/vector.png"
 
 const Offer = () => {
   const items = [

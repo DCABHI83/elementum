@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"; 
-import vector from "../assets/Vector 5.png";
+import vector from "../assets/vector.png";
 import semi from "../assets/semi.png";
 import curl1 from "../assets/curl1.png";
 import curl2 from "../assets/curl2.png";

@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import vector from '../assets/Vector 5.png'
+import vector from '../assets/vector.png'
 import office1 from '../assets/office1.png'
 import square from '../assets/square.png'
 import triangle from '../assets/triangle.png'
